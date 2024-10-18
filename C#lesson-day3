@@ -1,0 +1,91 @@
+string projectName = "ACME";
+string englishLocation = $@"c:\Exercise\{projectName}\data.txt";
+Console.WriteLine($"View English output :\n\t\t{englishLocation}\n");
+
+string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0432\u044b\u0432\u043e\u0434";
+String russianLocation = $@"c:\Exercise\{projectName}\ru-Ru\data.txt";
+Console.WriteLine($"{russianMessage}:\n\t\t{russianLocation}\n");Output
+View English output :
+		c:\Exercise\ACME\data.txt
+
+Посмотреть русский вывод:
+		c:\Exercise\ACME\ru-Ru\data.txt
+int firstNumber = 12;
+int secondNumber = 7;
+Console.WriteLine(firstNumber + secondNumber);Output
+19
+string firstNumber = "Bob";
+int widgetsSold = 7;
+Console.WriteLine(firstNumber + " sold " + widgetsSold + " widgetsSold. ");Output
+Bob sold 7 widgetsSold. 
+string firstNumber = "Bob";
+int widgetsSold = 7;
+Console.WriteLine(firstNumber + " sold " + widgetsSold + 7 + " widgetsSold. ");Output
+Bob sold 77 widgetsSold. 
+string firstName = "Bob";
+int widgetsSold = 7;
+Console.WriteLine(firstName + " sold " + (widgetsSold + 7) + " widgets. ");Output
+Bob sold 14 widgets. 
+int sum = 7 + 5;
+int difference = 7 - 5;
+int product = 7 * 5;
+int quotient = 7 / 5;
+
+Console.WriteLine("Sum;" + sum);
+Console.WriteLine("Difference: " + difference);
+Console.WriteLine("Product: " + product);
+Console.WriteLine("Quotient: " + quotient);Output
+Sum;12
+Difference: 2
+Product: 35
+Quotient: 1
+decimal decimalQuotient = 7.0m / 5;
+Console.WriteLine($"Decimal quotient: {decimalQuotient}");Output
+Decimal quotient: 1.4int first = 7;
+int second = 5;
+decimal quotient = (decimal)first / (decimal)second;
+Console.WriteLine(quotient);Output
+1.4
+Console.WriteLine($"Modulus of 200 / 5 : {200 % 5}");
+Console.WriteLine($"Modulus of 7 / 5 : {7 % 5}");Output
+Modulus of 200 / 5 : 0
+Modulus of 7 / 5 : 2
+int value1 = 3 + 4 * 5;
+int value2 = (3 + 4) * 5;
+Console.WriteLine(value1);
+Console.WriteLine(value2);Output
+23int value = 1;
+
+value = value + 1;
+Console.WriteLine("First increment: " + value);
+
+value += 1;
+Console.WriteLine("Second increment: " + value);
+
+value ++;
+Console.WriteLine("Third increment: " + value);
+
+value = value - 1;
+Console.WriteLine("First decrement: " + value);
+
+value -= 1;
+Console.WriteLine("Second decrement: " + value);
+
+value --;
+Console.WriteLine("Third decrement: " + value);Output
+First increment: 2
+Second increment: 3
+Third increment: 4
+First decrement: 3
+Second decrement: 2
+Third decrement: 1
+int value = 1;
+value++;
+Console.WriteLine("First: " + value);
+Console.WriteLine($"Second: {value++}");
+Console.WriteLine($"Third: " + value);
+Console.WriteLine($"Fourth: " + (++value));Output
+First: 2
+Second: 2
+Third: 3
+Fourth: 4
